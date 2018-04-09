@@ -1,0 +1,22 @@
+configuration:
+  paths:
+    output_path: ../resource/output/
+    chrome_webdriver: ../resource/webdriver/chromedriver.exe
+
+urls:
+  sfstats: http://www.sfstats.net
+  vitisport: http://www.vitisport.cz
+  windrawwin: http://www.windrawwin.com
+
+vitisport:
+  de1: /index.php?clanek=analyzy&sekce=fotbal&liga=nemecko&lang=de
+
+sfstats:
+  de1: /soccer/leagues/62_Bundesliga
+
+leagues:
+  - de1
+
+sites:
+  - sfstats
+  - vitisport
