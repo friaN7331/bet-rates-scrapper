@@ -3,10 +3,18 @@ configuration:
     output_path: ../resource/output/
     chrome_webdriver: ../resource/webdriver/chromedriver.exe
 
+  requests:
+    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    sleep: 0
+
+  sqlite3:
+    database-path: ../resource/database/
+    string-translator: translate.db
+
 urls:
   sfstats: http://www.sfstats.net
   vitisport: http://www.vitisport.cz
-  windrawwin: http://www.windrawwin.com
+  wdw: http://www.windrawwin.com
 
 vitisport:
   de1: /index.php?clanek=analyzy&sekce=fotbal&liga=nemecko&lang=de
@@ -14,9 +22,13 @@ vitisport:
 sfstats:
   de1: /soccer/leagues/62_Bundesliga
 
+wdw:
+  de1: /tips/germany-bundesliga/
+
 leagues:
   - de1
 
 sites:
   - sfstats
   - vitisport
+  - wdw
